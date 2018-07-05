@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Router
+import { FeatureRoutingModule } from './app.routes';
+
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
@@ -20,7 +24,8 @@ import { FootbarComponent } from './components/shared/footbar/footbar.component'
     FootbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FeatureRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
