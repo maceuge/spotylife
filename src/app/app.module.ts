@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // Router
 import { FeatureRoutingModule } from './app.routes';
@@ -12,6 +13,9 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FootbarComponent } from './components/shared/footbar/footbar.component';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { CardComponent } from './components/shared/card/card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +25,16 @@ import { FootbarComponent } from './components/shared/footbar/footbar.component'
     ArtistComponent,
     AboutComponent,
     NavbarComponent,
-    FootbarComponent
+    FootbarComponent,
+    NoimagePipe,
+    CardComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
-    FeatureRoutingModule
+    FeatureRoutingModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

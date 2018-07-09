@@ -1,7 +1,11 @@
+<div class="container">
 <div class="row">
     <div class="col s12">
-        <h1 class="white-text"><i class="fab fa-spotify fa-1x purple-text darken-4"></i> SpotyLife App</h1>
+        <h4 class="white-text">Spoty New Release</h4>
         <hr>
         <div class="center"></div>
     </div>
+</div>
+<app-loading *ngIf="loading"></app-loading>
+<app-card [items]="releases"></app-card>
 </div>

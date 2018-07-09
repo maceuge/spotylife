@@ -2,10 +2,23 @@
     <div class="nav-wrapper indigo darken-2">
         <form>
             <div class="input-field">
-                <input id="search" type="search" required>
+                <input id="search" type="search" placeholder="Search Artist" (keyup)="search(searcher.value)" #searcher>
                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
             </div>
         </form>
     </div>
 </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h4 class="white-text">Resultados de Busqueda</h4>
+            <hr>
+            <div class="center"></div>
+        </div>
+    </div>
+    <app-loading *ngIf="loading"></app-loading>
+    <app-card *ngIf="!loading" [items]="artists" ></app-card>
+
+</div>
