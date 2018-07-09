@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
     this.spotyService.getNewRelease().subscribe( (data: any) => {
       this.releases = data;
       this.loading = false;
+      console.log(data);
     });
 
   }

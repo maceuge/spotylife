@@ -1,3 +1,25 @@
-<p>
-  artist works!
-</p>
+<div class="row">
+    <div class="col m10 offset-m1">
+        <h2 class="header pink-text text-accent-3">{{ artist.name }}</h2>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img [src]="artist.images[0].url ">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Bueno soy un salame que le gusta cantar! Pongo esto porque no tengo bio en Spotify</p>
+              <p>Seguidores: <span>{{ artist.followers.total }}</span></p>
+              <p>Popularidad: <span>{{ artist.popularity }}</span></p>
+              <hr>
+              <ul class="collection with-header">
+                  <li class="collection-header"><h6 class="indigo-text text-darken-4S">Genero</h6></li>
+                  <li class="collection-item" *ngFor="let genre of artist.genres">{{genre}}</li>
+                </ul> 
+            </div>
+            <div class="card-action">
+              <a [href]="artist.external_urls.spotify">Ver en Spotify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div> 

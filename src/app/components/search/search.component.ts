@@ -21,6 +21,7 @@ export class SearchComponent implements OnInit {
 
     this.spotyService.getSearch(value).subscribe( (data: any) => {
       this.artists = data;
+      console.log(data);
       this.loading = false;
     });
   }

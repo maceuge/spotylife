@@ -10,7 +10,7 @@ const ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'search', component: SearchComponent },
-    { path: 'artist', component: ArtistComponent },
+    { path: 'artist/:id', component: ArtistComponent },
     { path: 'about', component: AboutComponent },
     { path: '**', component: HomeComponent },
 
