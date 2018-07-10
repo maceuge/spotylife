@@ -1,0 +1,14 @@
+<img src="../../../assets/img/home.jpg" height="600" alt="">
+
+<div class="row pink darken-3">
+    <div class="col m12">
+        <h2 class="white-text center-align">Spoty App Your Life!</h2>
+        <p class="flow-text white-text center-align">Una pagina en donde puedas encontrar los temas que mas te gustan</p>
+    </div>
+</div>
+
+<div class="carousel">
+    <a class="carousel-item" *ngFor="let cover of covers">
+        <img [src]="cover.images[0].url">
+    </a>
+</div>

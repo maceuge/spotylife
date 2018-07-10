@@ -5,9 +5,11 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { AboutComponent } from './components/about/about.component';
+import { InitpageComponent } from './components/initpage/initpage.component';
 
 const ROUTES: Routes = [
     { path: '', component: HomeComponent },
+    { path: 'initpage', component: InitpageComponent },
     { path: 'home', component: HomeComponent },
     { path: 'search', component: SearchComponent },
     { path: 'artist/:id', component: ArtistComponent },

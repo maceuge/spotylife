@@ -1,20 +1,36 @@
 <nav>
-    <div class="nav-wrapper purple darken-4">
+    <div class="nav-wrapper deep-purple darken-4">
         <a class="brand-logo pink-text" style="margin-left: 15px;">
             <i class="fab fa-spotify lime-text text-accent-3"></i> SpotyLife
         </a>
-        <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a data-target="mobile-demo" class="sidenav-trigger" href=""><i class="material-icons">menu</i></a>
         <ul id="nav-mobile " class="right hide-on-med-and-down ">
-            <li [routerLinkActive]="['active'] "><a [routerLink]="['home'] ">Home</a></li>
-            <li [routerLinkActive]="['active'] "><a [routerLink]="['artist'] ">Artist</a></li>
-            <li [routerLinkActive]="['active'] "><a [routerLink]="['search'] ">Search</a></li>
-            <li [routerLinkActive]="['active'] "><a [routerLink]="['about'] ">About</a></li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['initpage']" class="lime-text text-accent-3">
+                    HOME
+                </a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['home']" class="lime-text text-accent-3">
+                    NEW RELEASE
+                </a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['search']" class="lime-text text-accent-3">
+                    SEARCH
+                </a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['about']" class="lime-text text-accent-3">
+                    <i class="fas fa-info-circle"></i>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
 <ul class="sidenav" id="mobile-demo">
-    <li [routerLinkActive]="['active'] "><a [routerLink]="['home'] ">Home</a></li>
-    <li [routerLinkActive]="['active'] "><a [routerLink]="['artist'] ">Artist</a></li>
-    <li [routerLinkActive]="['active'] "><a [routerLink]="['search'] ">Search</a></li>
-    <li [routerLinkActive]="['active'] "><a [routerLink]="['about'] ">About</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['home']" class="pink-text text-accent-3">Release</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['artist']" class="pink-text text-accent-3">Artist</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['search']" class="pink-text text-accent-3">Search</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['about']" class="pink-text text-accent-3">About</a></li>
 </ul>

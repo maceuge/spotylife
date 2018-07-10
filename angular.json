@@ -23,12 +23,15 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css",
-                            "node_modules/materialize-css/dist/css/materialize.min.css"
+                            "node_modules/materialize-css/dist/css/materialize.min.css",
+                            "src/styles.css"
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js",
-                            "node_modules/materialize-css/dist/js/materialize.min.js"
+                            "node_modules/materialize-css/dist/js/materialize.min.js",
+                            "src/assets/fontawsome_lte_5/js/all.js",
+                            "src/assets/js/sidenav.js",
+                            "src/assets/js/carousel.js"
                         ]
                     },
                     "configurations": {

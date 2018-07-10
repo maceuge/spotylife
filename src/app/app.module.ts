@@ -16,6 +16,7 @@ import { FootbarComponent } from './components/shared/footbar/footbar.component'
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { CardComponent } from './components/shared/card/card.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { InitpageComponent } from './components/initpage/initpage.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     FootbarComponent,
     NoimagePipe,
     CardComponent,
-    LoadingComponent
+    LoadingComponent,
+    InitpageComponent
   ],
   imports: [
     BrowserModule,
